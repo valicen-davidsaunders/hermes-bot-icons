@@ -16,7 +16,14 @@ language: dark rounded-square, accent rim + glow, bold geometric glyph — no fa
 
 ## Install (one-liner, Linux or macOS)
 
-    curl -fsSL https://raw.githubusercontent.com/valicen-davidsaunders/hermes-bot-icons/main/install.sh | bash
+The repo is **private** (Valicen fleet assets), so clone with your existing
+GitHub git credentials — the same way you clone any of the cenlogic/valicen repos:
+
+    git clone --depth 1 https://github.com/valicen-davidsaunders/hermes-bot-icons /tmp/hbi && bash /tmp/hbi/install.sh
+
+On a machine with the `gh` CLI authenticated, equivalently:
+
+    gh repo clone valicen-davidsaunders/hermes-bot-icons /tmp/hbi && bash /tmp/hbi/install.sh
 
 Options: `--dry-run` (preview, change nothing), `--list` (mapping only),
 `HERMES_HOME=/custom/path` for non-default Hermes homes.
